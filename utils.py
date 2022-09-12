@@ -20,8 +20,8 @@ def visualize(data,trend,threshold = None, fig_size = (30,20)):
         plt.scatter(idx, data[idx],c = 'red')
 
     #RESIDUAL
-    # plt.subplot(2,1,2)
-    # plt.plot(np.arange(data.shape[0]),data - trend)
+    plt.subplot(2,1,2)
+    plt.plot(np.arange(data.shape[0]),data - trend)
 
     plt.legend(loc = 'upper left')
     plt.show()
