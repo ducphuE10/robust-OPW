@@ -1,0 +1,3 @@
+#ignore pyc in all folder
+**/*.pyc
+*.pyc
