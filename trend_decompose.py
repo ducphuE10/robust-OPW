@@ -50,7 +50,7 @@ import pandas as pd
 # from .impl import _l1tf
 import numpy as np
 
-def l1tf(corr, delta):
+def l1filter(corr, delta):
     """
     :param corr: Corrupted signal, should be a numpy array / pandas Series
     :param delta: Strength of regularization
@@ -136,3 +136,7 @@ def df_l1tf(df, delta=3, remove_outliers=False, mad_factor=3):
 
 
 #--------------------------------------------------------------------------------------------------------------------
+
+
+def robustTrend(y):
+    pass
