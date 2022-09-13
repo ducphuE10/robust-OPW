@@ -178,9 +178,9 @@ class BaseOrderPreserve:
         D_hat = D - self.lambda1 * E + self.lambda2 * (F / (2 * self.delta ** 2) + np.log(self.delta * np.sqrt(2 * np.pi)))
         return D_hat
 
-    def get_pos_cost_matrix(self, x1, x2, metric='sqeuclidean', **kwargs):
-        D_hat = self.get_cost_matrix(x1, x2, metric=metric, **kwargs)
-        return self._get_posterior(x1, x2, D_hat)
+    def get_pos_cost_matrix(self,a, b, M):
+        # D_hat = self.get_cost_matrix(x1, x2, metric=metric, **kwargs)
+        return self._get_posterior(a, b, M)
 
 
 class OPW(BaseOrderPreserve):
